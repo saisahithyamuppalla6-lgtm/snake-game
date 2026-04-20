@@ -217,7 +217,21 @@ export function SnakeGame() {
               className="absolute inset-0 bg-black/80 backdrop-blur-sm flex flex-col items-center justify-center rounded-lg z-20"
             >
               {isGameOver ? (
-                <div className="text-center p-8">
+                <div className="text-center p-8 flex flex-col items-center">
+                  <div className="flex flex-col items-start mb-6 -ml-8">
+                    <span 
+                      className="text-[#1d4ed8] font-black text-[28px] lowercase tracking-tighter leading-none mb-1 shadow-black drop-shadow-md" 
+                      style={{ WebkitTextStroke: '1.5px #93c5fd' }}
+                    >
+                      snake game
+                    </span>
+                    <span 
+                      className="text-[#1d4ed8] font-black text-[28px] lowercase tracking-tighter leading-none ml-14 shadow-black drop-shadow-md" 
+                      style={{ WebkitTextStroke: '1.5px #93c5fd' }}
+                    >
+                      snake game
+                    </span>
+                  </div>
                   <h2 className="text-4xl font-bold text-white mb-2 tracking-tighter">GAME OVER</h2>
                   <p className="text-cyan-400 font-mono text-sm mb-6 uppercase tracking-widest">Final Slither: {score}</p>
                   <button 
